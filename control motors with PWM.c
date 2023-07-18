@@ -17,10 +17,10 @@ int PROCESS(void)
 	INPUT_MODULE(DDRB,1);  //PB1 input pin for  direction control 1
 	INPUT_MODULE(DDRB,2);  //PB2 input pin for  direction control 2
 	INPUT_MODULE(DDRB,3);  //PB3 Enable of PWM
-	DDRC=0xFF;  //Define as PORT C as an output port
-	i=0;   //Duty cycle determination
-	OCR0=i;    //for  duty cycle
-	TCCR0=0x61;   // phase correct PWM
+	//DDRC=0xFF;  //Define as PORT C as an output port
+	//i=0;   //Duty cycle determination
+	//OCR0=i;    //for  duty cycle
+	//TCCR0=0x61;   // phase correct PWM
 	/*  Super loop to execute infinitely */
 	while (1)
 	{
